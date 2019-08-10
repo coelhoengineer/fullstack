@@ -32,6 +32,6 @@ class MenuItem(Base):
 from sqlalchemy import create_engine
 engine = create_engine('sqlite:///restaurantmenu.db')
 
-from sqlalchemy.orm import sessionmaker
+
 Base.metadata.bind = engine
 Base.metadata.create_all(engine)
